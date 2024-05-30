@@ -6,7 +6,7 @@ This is a simple blog code base. Please refer to the documentation for further i
 
 This repository contains the source code for the Bloggy. The server itself is implemented in node using express. Follow the instructions below to set up the codebase on your local machine.
 
-### Here is the [API Documentation](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file?tab=readme-ov-file#api-documentation-1)
+### Here is the [API Documentation](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#api-documentation-1)
 
 # Table of Contents
 
