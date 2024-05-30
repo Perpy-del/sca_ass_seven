@@ -6,23 +6,23 @@ This is a simple blog code base. Please refer to the documentation for further i
 
 This repository contains the source code for the Bloggy. The server itself is implemented in node using express. Follow the instructions below to set up the codebase on your local machine.
 
-### Here is the [API Documentation](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#api-documentation-1)
+### Here is the [API Documentation](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file?tab=readme-ov-file#api-documentation-1)
 
 # Table of Contents
 
-- ### [Prerequisites](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#prerequisites-1)
+- ### [Prerequisites](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#prerequisites-1)
 
-- ### [Installation](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#installation-1)
+- ### [Installation](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#installation-1)
 
-- ### [Configuration](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#configuration-1)
+- ### [Configuration](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#configuration-1)
 
-- ### [Directory Structure](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#directory-structure-1)
+- ### [Directory Structure](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#directory-structure-1)
 
-- ### [Usage](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#usage-1)
+- ### [Usage](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#usage-1)
 
-- ### [API Documentation](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#api-documentation-1)
+- ### [API Documentation](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#api-documentation-1)
 
-  - [Post Routes](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#admins-routes)
+  - [Post Routes](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#admins-routes)
 
     - [Get All Posts](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#get-methodget-all-posts-)
 
@@ -32,17 +32,17 @@ This repository contains the source code for the Bloggy. The server itself is im
 
     - [Update Post](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#put-methodupdate-a-post-postid)
 
-    - [Delete Post](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#get-methodlogin-authenticationauthorization-adminsprotected)
+    - [Delete Post](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#get-methodlogin-authenticationauthorization-adminsprotected)
 
 - ### [Postman Documentation](https://github.com/sca_ass_seven#postman-documentation-1)
 
-- ### [Troubleshooting](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#troubleshooting-1)
+- ### [Troubleshooting](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#troubleshooting-1)
 
-- ### [Project Status](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#project-status-1)
+- ### [Project Status](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#project-status-1)
 
-- ### [License](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#license-1)
+- ### [License](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#license-1)
 
-- ### [Credits](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#credits-1)
+- ### [Credits](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#credits-1)
 
 ## Prerequisites
 
