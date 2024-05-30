@@ -32,7 +32,7 @@ This repository contains the source code for the Bloggy. The server itself is im
 
     - [Update Post](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#put-methodupdate-a-post-postid)
 
-    - [Delete Post](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#get-methodlogin-authenticationauthorization-adminsprotected)
+    - [Delete Post](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#delete-methoddelete-a-post-postid)
 
 - ### [Postman Documentation](https://github.com/sca_ass_seven#postman-documentation-1)
 
@@ -325,6 +325,30 @@ Response
         "upsertedId": null,
         "upsertedCount": 0,
         "matchedCount": 1
+    }
+}
+```
+
+#### DELETE Method(Delete A Post): /:postId
+
+**[Back to Table of Contents](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#table-of-contents)**
+
+Parameters: postId
+
+- EXAMPLE: Delete A Post - Successful
+
+**_STATUS: 200 OK_**
+
+```json
+Request
+curl --location 'https://localhost:HOST/01HZ47JF0H4HA1MKWX369RFG7V' \
+
+Response
+(json)
+{
+    "data": {
+        "acknowledged": true,
+        "deletedCount": 1
     }
 }
 ```
