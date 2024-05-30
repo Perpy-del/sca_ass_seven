@@ -5,13 +5,13 @@ const NotFound = require('./../errors/NotFound')
 const { format } = require('date-fns');
 
 async function getPosts() {
-    const collection = await database.connect('posts');
+    const collection = await database.connect(process.env.DB_DATABASE);
 
     return await collection.find({}).toArray()
 }
 
 async function getPost(identifier) {
-    const collection = await database.connect('posts');
+    const collection = await database.connect(process.env.DB_DATABASE);
 
     const result = await collection.findOne({'id': identifier});
 
@@ -23,7 +23,7 @@ async function getPost(identifier) {
 }
 
 async function createPost(postData) {
-    const collection = await database.connect('posts');
+    const collection = await database.connect(process.env.DB_DATABASE);
     
     const today = new Date();
 

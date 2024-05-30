@@ -1,13 +1,27 @@
+const existingSlugs = new Set();
+
 function sluggify(text) {
     if (!text) {
-        return null
-    };
-  
-    return text
-      .toLowerCase() // Convert to lowercase
-      .replace(/[^\w\s-]/g, '') // Remove non-word, non-space, and non-hyphen characters
-      .replace(/\s+/g, '-') // Replace whitespace with hyphens
-      .replace(/-+$/, ''); // Remove trailing hyphens
+        return null;
+    }
+
+    let slug = text
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, '') 
+        .replace(/\s+/g, '-') 
+        .replace(/-+$/, '');
+
+    let uniqueSlug = slug;
+    let counter = 1;
+
+    // Ensure the slug is unique by appending a counter if necessary
+    while (existingSlugs.has(uniqueSlug)) {
+        uniqueSlug = `${slug}-${counter}`;
+        counter++;
+    }
+
+    existingSlugs.add(uniqueSlug);
+    return uniqueSlug;
 }
 
 module.exports = sluggify;
