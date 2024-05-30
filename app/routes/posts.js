@@ -12,4 +12,6 @@ router.post('/', validateRequest, postsController.store);
 
 router.put('/:post', validateUpdateRequest, postsController.update);
 
+router.delete('/:post', postsController.remove);
+
 module.exports = router;

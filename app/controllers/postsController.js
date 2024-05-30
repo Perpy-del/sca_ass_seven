@@ -48,9 +48,22 @@ async function update(request, response) {
     }
 }
 
+async function remove(request, response) {
+    try {
+        const result = await service.deletePost(request.params.post)
+   
+        response.status(201).json({ 'data': result})
+    } catch (error) {
+        console.log(`Error querying database: ${error}`);
+    
+        response.status(error.statusCode ?? 500).json({ 'data': { 'error': `${error.message}` } });
+    }
+}
+
 module.exports = {
     index,
     show,
     store,
-    update
+    update,
+    remove
 }

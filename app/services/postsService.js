@@ -58,9 +58,18 @@ async function updatePost(postData, identifier) {
     return result;
 }
 
+async function deletePost(identifier) {
+    const collection = await database.connect(process.env.DB_DATABASE);
+
+    const result = await collection.deleteOne({"id": identifier});
+
+    return result;
+}
+
 module.exports = {
     getPosts,
     getPost,
     createPost,
     updatePost,
+    deletePost
 }
