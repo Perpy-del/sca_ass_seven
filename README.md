@@ -24,13 +24,13 @@ This repository contains the source code for the Bloggy. The server itself is im
 
   - [Post Routes](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#admins-routes)
 
-    - [Get All Posts](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#post-methodregister-admin-with-companyid-adminssignup)
+    - [Get All Posts](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#get-methodget-all-posts-)
 
-    - [Get A Post](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#post-methodregister-admin-with-google-adminsauth-token)
+    - [Get A Post](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#get-methodget-a-post-postid)
 
-    - [Create Post](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#post-methodlogin-admin-adminslogin)
+    - [Create Post](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#post-methodcreate-a-post-)
 
-    - [Update Post](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#post-methodlogin-admin-with-google-adminslogin-auth-token)
+    - [Update Post](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#put-methodupdate-a-post-postid)
 
     - [Delete Post](https://github.com/sca_ass_seven/tree/main?tab=readme-ov-file#get-methodlogin-authenticationauthorization-adminsprotected)
 
@@ -295,6 +295,36 @@ Response
                 }
             ]
         }
+    }
+}
+```
+
+#### PUT Method(Update A Post): /:postId
+
+**[Back to Table of Contents](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#table-of-contents)**
+
+Parameters: postId
+
+- EXAMPLE: Update A Post - Successful
+
+**_STATUS: 200 OK_**
+
+```json
+Request
+curl --location 'https://localhost:HOST/01HZ47JF0H4HA1MKWX369RFG7V' \
+--data-raw '{
+    "title": "Updated the Brand New Post"
+}'
+
+Response
+(json)
+{
+    "data": {
+        "acknowledged": true,
+        "modifiedCount": 1,
+        "upsertedId": null,
+        "upsertedCount": 0,
+        "matchedCount": 1
     }
 }
 ```
