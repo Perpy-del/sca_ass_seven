@@ -11,9 +11,8 @@ async function getPosts() {
 }
 
 async function getPost(identifier) {
-    const collection = await database.connect(process.env.DB_DATABASE);
 
-    const result = await collection.findOne({'id': identifier});
+    const result = await dbCollection.findOne({'id': identifier});
 
     if (result === null) {
         throw new NotFound("Post not found.");
@@ -41,8 +40,36 @@ async function createPost(postData) {
     return result;
 }
 
+async function updatePost(postData, identifier) {
+    const collection = await database.connect(process.env.DB_DATABASE);
+    
+    const today = new Date();
+
+    const result = await collection.updateOne({"id": identifier}, {$set: {
+        title: postData.title,
+        slug: sluggify(postData.title),
+        author: postData.author,
+        body: postData.body,
+        is_featured: postData.is_featured ?? false,
+        created_at: format(today, 'yyyy-MM-dd'),
+        category: postData.category ?? "Uncategorized"
+    }});
+
+    return result;
+}
+
+async function deletePost(identifier) {
+    const collection = await database.connect(process.env.DB_DATABASE);
+
+    const result = await collection.deleteOne({"id": identifier});
+
+    return result;
+}
+
 module.exports = {
     getPosts,
     getPost,
-    createPost
+    createPost,
+    updatePost,
+    deletePost
 }
