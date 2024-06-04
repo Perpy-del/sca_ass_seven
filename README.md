@@ -4,7 +4,7 @@ Welcome to the Bloggy Codebase!
 
 This is a simple blog code base. Please refer to the documentation for further information.
 
-This repository contains the source code for the Bloggy. The server itself is implemented in node using express. Follow the instructions below to set up the codebase on your local machine.
+This repository contains the source code for the Bloggy application. The server itself is implemented in node using express. Follow the instructions below to set up the codebase on your local machine.
 
 ### Here is the [API Documentation](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#api-documentation-1)
 
@@ -126,14 +126,15 @@ bloggy/
 └───storage
 ```
 
-- `src/`:Contains the main source code files
-- `tests/`:Contains the unit tests for the codebase.
+- `app/`:Contains the main source code files
+- `config/`:Contains the config files for the codebase.
+- `storage/`:Contains the data store files for the codebase.
 
 ## Usage
 
 **[Back to Table of Contents](https://github.com/Perpy-del/sca_ass_seven/tree/main?tab=readme-ov-file#table-of-contents)**
 
-To start the Loan_Prediction_App application on your local environment, run the following command:
+To start the Bloggy application on your local environment, run the following command:
 
 npm start
 
